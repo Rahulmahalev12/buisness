@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul's wave</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Rahul's wave</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="cart-btn" onclick="viewCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <section class="products" id="products">
+    <h2>Our Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="bmw.jpg" alt="BMW S1000RR">
+        <h3>BMW S1000RR</h3>
+        <p>$29,665</p>
+        <button onclick="addToCart('BMW S1000RR')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="dukati.jpg" alt="DUKATI PANIGALE V4">
+        <h3>DUKATI PANIGALE V4</h3>
+        <p>$25,995</p>
+        <button onclick="addToCart('DUKATI PANIGALE V4')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="porshe.jpg" alt="PORSHE 911">
+        <h3>PORSCHE 911</h3>
+        <p>$1,29,950</p>
+        <button onclick="addToCart('PORSCHE 911')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="g class.jpg" alt="Mercedes G Wagon">
+        <h3>Mercedes G Wagon</h3>
+        <p>$186,100</p>
+        <button onclick="addToCart('Mercedes G Wagon')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="bmw m4.jpg" alt="BMW M4">
+        <h3>BMW M4</h3>
+        <p>$96,200</p>
+        <button onclick="addToCart('BMW M4')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="home" style="padding: 40px; background-color: #f0f0f0;">
+    <h1 style="text-align: center;">Welcome to Rahul's Wave</h1>
+    <p style="max-width: 800px; margin: 20px auto; font-size: 18px; line-height: 1.6;">
+      Discover the latest and greatest in high-performance vehicles. From powerful bikes to luxurious cars, we have
+      everything you need to fuel your passion for speed and style.
+      Explore our collection and find your next ride today!
+    </p>
+  </section>
+  <section id="contact" style="padding: 40px; background-color: #e0e0e0;">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <form style="max-width: 600px; margin: 20px auto;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px;"></textarea>
+
+      <button type="submit"
+        style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Send
+        Message</button>
+    </form>
+  </section>
+  <section id="about" style="padding: 40px; background-color: #f9f9f9;">
+    <h2 style="text-align: center;">About Us</h2>
+    <p style="max-width: 800px; margin: 20px auto; font-size: 18px; line-height: 1.6;">
+      Welcome to Rahul's Wave! We are passionate about high-performance vehicles and committed to bringing the best of
+      bikes and cars to enthusiasts like you.
+      Our goal is to provide detailed insights, comparisons, and options for everyone who loves speed, design, and
+      innovation on two or four wheels.
+      Whether you're a long-time rider or just getting started, we have something exciting for everyone.
+    </p>
+  </section>
+  </section>
+  <footer>
+    <p>&copy; 2025 Rahul's wave. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
